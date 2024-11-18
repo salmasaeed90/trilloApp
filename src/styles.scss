@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+@import './app/base.scss';
+
+/*COLORs*/
+:root{
+    --color-Primary: #eb2f64;
+    --color-Primary-light: #FF3366;
+    --color-Primary-dark: #BA265D;
+
+
+    --color-Grey-light-1: #faf9f9;
+    --color-Grey-light-2: #f4f2f2;
+    --color-Grey-light-3: #f0eeee;
+    --color-Grey-light-4: #ccc;
+
+
+    --color-Grey-dark-1: #333;
+    --color-Grey-dark-2: #777;
+    --color-Grey-dark-3: #999;
+
+    --shadow-dark:0 2rem 6rem rgba(0,0,0,3);
+    --shadow-light:0 2rem 5rem rgba(0, 0, 0, .08);
+
+
+    --transition: all .3s ease;
+    --border-line: 1px solid var(--color-Grey-light-3)
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+*,
+*::after,
+*::before{
+
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    @media only screen and (max-width: $bp-large){
+        font-size: 55%;
+    }
+}
+
+body{
+    background-image: linear-gradient(to right bottom, var(--color-Primary-light), var(--color-Primary-dark));
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Open sans", sans-serif;
+    font-weight: 400;
+    font-size: var(--color-Grey-dark-2);
+    line-height: 1.6;
+    min-height: 100vh;
+}
